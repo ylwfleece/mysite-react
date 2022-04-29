@@ -1,4 +1,5 @@
 import "./Main.css";
+import { Link } from 'react-router-dom';
 
 function Main() {
   return (
@@ -18,15 +19,15 @@ function Main() {
         <div className="row text-center">
           <div className="banner-buttons">
             <div className="col-sm-1 col-md-1 col-sm-offset-5 col-md-offset-5">
-              <a className="btn btn-default btn-border" href="#about">
+              <Link className="btn btn-default btn-border" to="/about">
                 Info
-              </a>
+              </Link>
             </div>
 
             <div className="col-sm-1 col-md-1">
-              <a className="btn btn-default btn-border" href="#projects">
+              <Link className="btn btn-default btn-border" to="/projects">
                 Portfolio
-              </a>
+              </Link>
             </div>
           </div>
         </div>
