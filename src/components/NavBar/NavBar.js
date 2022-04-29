@@ -1,16 +1,16 @@
 // import "./NavBar.css";
+import {Link} from 'react-router-dom';
 
 function NavBar() {
   return (
-    // <!-- Navigation Bar -->
     <div className="navigation">
       <div className="container-fluid">
         <div className="row">
           <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1 text-center">
             <div className="logo">
-              <a href="index.html">
+              <Link to="/">
                 <img src="images/logo.svg" />
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -18,13 +18,13 @@ function NavBar() {
             <div className="primary-nav">
               <ul>
                 <li>
-                  <a href="index.html">Home</a>
+                  <Link to="/main">Home</Link>
                 </li>
                 <li>
-                  <a href="portfolio.html">Portfolio</a>
+                  <Link to="/projects">Portfolio</Link>
                 </li>
                 <li>
-                  <a href="contact.html">Contact</a>
+                  <Link to="/contact">Contact</Link>
                 </li>
               </ul>
             </div>
