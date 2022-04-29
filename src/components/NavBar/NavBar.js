@@ -1,7 +1,13 @@
 // import "./NavBar.css";
-import {Link} from 'react-router-dom';
+import {Link } from 'react-router-dom';
 
 function NavBar() {
+  // const history = useHistory();
+  // const push = (url) => {
+  //   console.log(url)
+  //   history.push(url)
+  // }
+
   return (
     <div className="navigation">
       <div className="container-fluid">
@@ -9,7 +15,7 @@ function NavBar() {
           <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1 text-center">
             <div className="logo">
               <Link to="/">
-                <img src="images/logo.svg" />
+                <img src="images/logo.svg" alt="" />
               </Link>
             </div>
           </div>
