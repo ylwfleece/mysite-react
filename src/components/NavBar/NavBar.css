@@ -16,8 +16,9 @@
 
   .nav-links {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     margin-right: 20px;
+    margin-left: 60%;
   }
   .primary-nav li {
     display: inline-block;
