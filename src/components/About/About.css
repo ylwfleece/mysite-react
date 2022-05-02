@@ -1,11 +1,17 @@
 .contact-btn {
-    margin-bottom: 25px;
+    margin-bottom: 35px;
 }
 
 .about {
     padding-bottom: 0;
+    padding-top: 75px;
 }
 
 .summary-card-row {
-    margin-left: 60px;
+    /* margin-left: 60px; */
+}
+
+.img-smaller {
+    height: 30px;
+    width: 30px;
 }
