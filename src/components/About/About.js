@@ -1,7 +1,6 @@
 import "./About.css";
 import { Link } from 'react-router-dom';
 
-
 function About() {
   return (
     <div className="about" id="about">
@@ -80,7 +79,7 @@ function About() {
                 <div className="development-img">
                   <img
                     className="img-responsive"
-                    src="../../../public/images/developerdesign.svg"
+                    src="./../../public/images/developerdesign.svg"
                   />
                 </div>
               </div>

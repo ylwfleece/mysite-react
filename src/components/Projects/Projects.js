@@ -1,39 +1,38 @@
-import './Projects.css';
-import $ from 'jquery';
-import { useEffect } from 'react';
+import "./Projects.css";
+import $ from "jquery";
+import { useEffect } from "react";
 
 function Projects() {
-
   useEffect(() => {
     projects();
-  }, [])
+  }, []);
 
   function projects() {
-    $('.luvtalk-project').css('height', $('.luvtalk-project').width());
-    $('.luvtalk-project h3').css(
-      'padding-top',
-      ($('.luvtalk-project').height() -
-        $('.luvtalk-project h3').height() -
-        $('.luvtalk-project .row').outerHeight()) /
+    $(".luvtalk-project").css("height", $(".luvtalk-project").width());
+    $(".luvtalk-project h3").css(
+      "padding-top",
+      ($(".luvtalk-project").height() -
+        $(".luvtalk-project h3").height() -
+        $(".luvtalk-project .row").outerHeight()) /
         2
     );
-    $('.personal-website-project').css(
-      'height',
-      $('.personal-website-project').width()
+    $(".personal-website-project").css(
+      "height",
+      $(".personal-website-project").width()
     );
-    $('.personal-website-project h3').css(
-      'padding-top',
-      ($('.personal-website-project').height() -
-        $('.personal-website-project h3').height() -
-        $('.personal-website-project .row').outerHeight()) /
+    $(".personal-website-project h3").css(
+      "padding-top",
+      ($(".personal-website-project").height() -
+        $(".personal-website-project h3").height() -
+        $(".personal-website-project .row").outerHeight()) /
         2
     );
-    $('.strike-zone-project').css('height', $('.strike-zone-project').width());
-    $('.strike-zone-project h3').css(
-      'padding-top',
-      ($('.strike-zone-project').height() -
-        $('.strike-zone-project h3').height() -
-        $('.strike-zone-project .row').outerHeight()) /
+    $(".strike-zone-project").css("height", $(".strike-zone-project").width());
+    $(".strike-zone-project h3").css(
+      "padding-top",
+      ($(".strike-zone-project").height() -
+        $(".strike-zone-project h3").height() -
+        $(".strike-zone-project .row").outerHeight()) /
         2
     );
     var doit;
@@ -42,6 +41,21 @@ function Projects() {
       doit = setTimeout(projects, 500);
     });
   }
+
+  const projs = [
+    {
+      title: "LUV TALK Website",
+      desc: "Website, created during my first internship, which utilized HTML, CSS, PHP, Ajax, Javascript/jQuery, and Wordpress.",
+    },
+    {
+      title: "Personal Website",
+      desc: "Enjoyable side project that was created to experiment with more HTML and CSS, but also provided an outlet to showcase my abilities and interests.",
+    },
+    {
+      title: "Strike Zone Analysis",
+      desc: "Data analytics project completed during my time at the Illinois Math and Science Academy which studied the baseball strike zone based on the state of the game.",
+    },
+  ];
 
   return (
     <div className="projects" id="projects">
@@ -63,7 +77,24 @@ function Projects() {
         </div>
 
         <div className="row">
-          <div className="col-sm-4 col-md-4 text-center">
+          {projs.map((proj) => (
+            <div className="col-sm-4 col-md-4 text-center">
+              <div className="luvtalk-project project-row">
+                <h3>{proj.title}</h3>
+                <p>{proj.desc} </p>
+                <div className="row more-btn-row">
+                  <div className="col-sm-4 col-md-4 col-sm-offset-4 col-md-offset-4">
+                    <div className="project-more-info">
+                      <a className="btn btn-default btn-border" href="#">
+                        More
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+          {/* <div className="col-sm-4 col-md-4 text-center">
             <div className="luvtalk-project project-row">
               <h3>LUV TALK Website</h3>
               <p>
@@ -120,7 +151,7 @@ function Projects() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className="row more-projects">
