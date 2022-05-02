@@ -1,7 +1,25 @@
 import "./NavBar.css";
 import {Link } from 'react-router-dom';
+import $ from 'jquery';
+import { useEffect } from 'react';
 
 function NavBar() {
+
+  useEffect(() => {
+    navigation();
+  }, [])
+
+  function navigation() {
+    $('.primary-nav').css('height', $('.logo').height());
+    $('.primary-nav li').css(
+      'margin-top',
+      ($('.primary-nav').height() - $('.primary-nav li').height()) / 2 + 'px'
+    );
+  
+    $(window).resize(function () {
+      setTimeout(navigation, 500);
+    });
+  }
 
   return (
     <div className="navigation">
