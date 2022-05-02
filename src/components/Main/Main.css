@@ -1,0 +1,9 @@
+.main-btns {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.main-btns div {
+    margin-left: 20px;
+}

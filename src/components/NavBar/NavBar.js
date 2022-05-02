@@ -1,12 +1,7 @@
-// import "./NavBar.css";
+import "./NavBar.css";
 import {Link } from 'react-router-dom';
 
 function NavBar() {
-  // const history = useHistory();
-  // const push = (url) => {
-  //   console.log(url)
-  //   history.push(url)
-  // }
 
   return (
     <div className="navigation">
@@ -22,15 +17,15 @@ function NavBar() {
 
           <div className="col-xs-11 col-sm-11 col-md-11 col-lg-11 text-right">
             <div className="primary-nav">
-              <ul>
+              <ul className="nav-links">
                 <li>
-                  <Link to="/main">Home</Link>
+                  <Link className="nav-link" to="/main">Home</Link>
                 </li>
                 <li>
-                  <Link to="/projects">Portfolio</Link>
+                  <Link className="nav-link" to="/projects">Portfolio</Link>
                 </li>
                 <li>
-                  <Link to="/contact">Contact</Link>
+                  <Link className="nav-link" to="/contact">Contact</Link>
                 </li>
               </ul>
             </div>

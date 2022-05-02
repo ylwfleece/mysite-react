@@ -1,4 +1,6 @@
-// import "./NavBar.css";
+import "./About.css";
+import { Link } from 'react-router-dom';
+
 
 function About() {
   return (
@@ -61,16 +63,16 @@ function About() {
 
         <div className="row">
           <div className="about-option-buttons">
-            <div className="col-sm-2 col-md-2">
-              <a href="#contact" className="btn btn-default btn-black-border">
+            <div className="col-sm-2 col-md-2 contact-btn">
+              <Link to="/contact" className="btn btn-default btn-black-border">
                 Contact
-              </a>
+              </Link>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="summary">
+      <div className="summary summary-top">
         <div className="container-fluid">
           <div className="row">
             <div className="development-summary">
