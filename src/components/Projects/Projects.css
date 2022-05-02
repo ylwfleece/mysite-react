@@ -1,0 +1,20 @@
+.projects-header {
+    padding-top: 40px;
+}
+
+.more-btn-row {
+    display: flex;
+   flex-direction: row;
+   justify-content: center;
+}
+
+.project-row {
+    padding: 35px;
+    height: 358px;
+}
+
+.more-projects {
+    display: flex;
+   flex-direction: row;
+   justify-content: center;
+}

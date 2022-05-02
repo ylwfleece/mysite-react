@@ -72,7 +72,7 @@ function About() {
         </div>
       </div>
 
-      <div className="summary summary-top">
+      <div className="summary">
         <div className="container-fluid">
           <div className="row">
             <div className="development-summary">
