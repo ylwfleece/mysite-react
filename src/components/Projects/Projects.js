@@ -46,14 +46,17 @@ function Projects() {
     {
       title: "LUV TALK Website",
       desc: "Website, created during my first internship, which utilized HTML, CSS, PHP, Ajax, Javascript/jQuery, and Wordpress.",
+      class: "luvtalk-project"
     },
     {
       title: "Personal Website",
       desc: "Enjoyable side project that was created to experiment with more HTML and CSS, but also provided an outlet to showcase my abilities and interests.",
+      class: "personal-website-project"
     },
     {
       title: "Strike Zone Analysis",
       desc: "Data analytics project completed during my time at the Illinois Math and Science Academy which studied the baseball strike zone based on the state of the game.",
+      class: "strike-zone-project"
     },
   ];
 
@@ -79,7 +82,7 @@ function Projects() {
         <div className="row">
           {projs.map((proj) => (
             <div className="col-sm-4 col-md-4 text-center">
-              <div className="luvtalk-project project-row">
+              <div className={proj.class + " project-row"}>
                 <h3>{proj.title}</h3>
                 <p>{proj.desc} </p>
                 <div className="row more-btn-row">

@@ -73,18 +73,18 @@ function About() {
 
       <div className="summary">
         <div className="container-fluid">
-          <div className="row">
-            <div className="development-summary">
-              <div className="col-sm-1 col-md-1">
+          <div className="row summary-card-row">
+            {/* <div className="development-summary"> */}
+              <div className="col-sm-1 col-md-1 ">
                 <div className="development-img">
                   <img
                     className="img-responsive"
-                    src="./../../public/images/developerdesign.svg"
+                    src="./summary-images/developerdesign.svg"
                   />
                 </div>
               </div>
 
-              <div className="col-sm-4 col-md-4">
+              <div className="col-sm-4 col-md-4 ">
                 <div className="development-description">
                   <h3>Development and Design</h3>
                   <p>
@@ -94,14 +94,14 @@ function About() {
                   </p>
                 </div>
               </div>
-            </div>
+            {/* </div> */}
 
-            <div className="responsive-summary">
+            {/* <div className="responsive-summary"> */}
               <div className="col-sm-1 col-md-1 col-sm-offset-2 col-md-offset-2">
                 <div className="responsive-img">
                   <img
                     className="img-responsive"
-                    src="../../../public/images/responsivedesign.svg"
+                    src="./summary-images/responsivedesign.png"
                   />
                 </div>
               </div>
@@ -118,16 +118,16 @@ function About() {
                   </p>
                 </div>
               </div>
-            </div>
+            {/* </div> */}
           </div>
 
-          <div className="row">
-            <div className="ideas-summary">
-              <div className="col-sm-1 col-md-1">
+          <div className="row summary-card-row">
+            {/* <div className="ideas-summary"> */}
+              <div className="col-sm-1 col-md-1 ">
                 <div className="idea-img">
                   <img
                     className="img-responsive"
-                    src="../../../public/images/innovativesolutions.svg"
+                    src="./summary-images/innovativesolutions.svg"
                   />
                 </div>
               </div>
@@ -143,13 +143,13 @@ function About() {
                   </p>
                 </div>
               </div>
-            </div>
+            {/* </div> */}
 
-            <div className="passion-summary">
+            {/* <div className="passion-summary"> */}
               <div className="col-sm-1 col-md-1 col-sm-offset-2 col-md-offset-2">
                 <img
                   className="img-responsive"
-                  src="../../../public/images/passion.svg"
+                  src="./summary-images/passion.svg"
                 />
               </div>
 
@@ -163,7 +163,7 @@ function About() {
                   </p>
                 </div>
               </div>
-            </div>
+            {/* </div> */}
           </div>
         </div>
       </div>
